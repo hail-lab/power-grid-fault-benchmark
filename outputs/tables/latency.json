@@ -1,0 +1,6 @@
+{
+  "CPU (measured)": 0.5603605000032985,
+  "GPU (measured)": 0.6241394999051408,
+  "TorchScript CPU": 0.42772650022016023,
+  "Jetson Nano (estimated 2.5\u00d7)": 1.4009012500082463
+}

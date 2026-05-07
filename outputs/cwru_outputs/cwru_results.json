@@ -1,0 +1,160 @@
+{
+  "dataset": "CWRU Bearing Data Center \u2014 real vibration recordings",
+  "bearing": "SKF 6205-2RS JEM, 1797 RPM (0\u20133 HP load conditions mixed)",
+  "fault_diameter_inches": 0.007,
+  "n_windows_per_class": 710,
+  "window_size_samples": 1024,
+  "sampling_rate_hz": 12000,
+  "pipeline": "identical to power grid experiment (no domain-specific modification)",
+  "fault_frequencies": {
+    "BPFI_Hz": 162.18,
+    "BPFO_Hz": 107.37,
+    "BSF_Hz": 70.59,
+    "FTF_Hz": 11.93
+  },
+  "classification_results": {
+    "Random Forest": {
+      "accuracy": 1.0,
+      "f1_macro": 1.0,
+      "f1_weighted": 1.0,
+      "auc": 1.0
+    },
+    "Gradient Boosting": {
+      "accuracy": 1.0,
+      "f1_macro": 1.0,
+      "f1_weighted": 1.0,
+      "auc": 1.0
+    },
+    "Logistic Regression": {
+      "accuracy": 1.0,
+      "f1_macro": 1.0,
+      "f1_weighted": 1.0,
+      "auc": 1.0
+    },
+    "Decision Tree": {
+      "accuracy": 1.0,
+      "f1_macro": 1.0,
+      "f1_weighted": 1.0,
+      "auc": 1.0
+    }
+  },
+  "shap_ranking": [
+    {
+      "rank": 1,
+      "feature": "Envelope_Std",
+      "mean_abs_shap": 0.061513,
+      "category": "severity_canonical"
+    },
+    {
+      "rank": 2,
+      "feature": "Variance",
+      "mean_abs_shap": 0.052899,
+      "category": "severity_canonical"
+    },
+    {
+      "rank": 3,
+      "feature": "RoCo_Envelope",
+      "mean_abs_shap": 0.052092,
+      "category": "severity_canonical"
+    },
+    {
+      "rank": 4,
+      "feature": "Peak2Peak",
+      "mean_abs_shap": 0.048971,
+      "category": "severity_canonical"
+    },
+    {
+      "rank": 5,
+      "feature": "RMS",
+      "mean_abs_shap": 0.046598,
+      "category": "severity_canonical"
+    },
+    {
+      "rank": 6,
+      "feature": "Kurtosis",
+      "mean_abs_shap": 0.042424,
+      "category": "severity_canonical"
+    },
+    {
+      "rank": 7,
+      "feature": "Shape_Factor",
+      "mean_abs_shap": 0.028852,
+      "category": "severity_canonical"
+    },
+    {
+      "rank": 8,
+      "feature": "BSF_Amp",
+      "mean_abs_shap": 0.02161,
+      "category": "spectral_fault_specific"
+    },
+    {
+      "rank": 9,
+      "feature": "BPFO_Amp",
+      "mean_abs_shap": 0.018267,
+      "category": "spectral_fault_specific"
+    },
+    {
+      "rank": 10,
+      "feature": "Shaft_1X_Amp",
+      "mean_abs_shap": 0.00846,
+      "category": "other"
+    },
+    {
+      "rank": 11,
+      "feature": "Impulse_Factor",
+      "mean_abs_shap": 0.006797,
+      "category": "severity_canonical"
+    },
+    {
+      "rank": 12,
+      "feature": "Crest_Factor",
+      "mean_abs_shap": 0.004373,
+      "category": "severity_canonical"
+    },
+    {
+      "rank": 13,
+      "feature": "Spectral_Entropy",
+      "mean_abs_shap": 0.002196,
+      "category": "other"
+    },
+    {
+      "rank": 14,
+      "feature": "BPFI_Amp",
+      "mean_abs_shap": 0.000512,
+      "category": "spectral_fault_specific"
+    },
+    {
+      "rank": 15,
+      "feature": "Skewness",
+      "mean_abs_shap": 0.000382,
+      "category": "other"
+    },
+    {
+      "rank": 16,
+      "feature": "FTF_Amp",
+      "mean_abs_shap": 0.0,
+      "category": "other"
+    }
+  ],
+  "physics_alignment": {
+    "severity_canonical_in_top5": [
+      "Envelope_Std",
+      "Peak2Peak",
+      "RMS",
+      "RoCo_Envelope",
+      "Variance"
+    ],
+    "spectral_canonical_in_top10": [
+      "BPFO_Amp",
+      "BSF_Amp"
+    ],
+    "spectral_ranks": {
+      "BSF_Amp": 8,
+      "BPFO_Amp": 9,
+      "BPFI_Amp": 14
+    },
+    "non_canonical_in_top5": [],
+    "verdict": "ALIGNED \u2014 severity features dominant (expected: mixed-load), spectral features present in top 10",
+    "note": "Mixed load conditions (0\u20133 HP) cause fault-severity features to dominate. All top-5 features are ISO 13373 / ISO 10816 canonical bearing diagnostics. Fault-type-specific spectral features (BSF, BPFO) appear at ranks 8\u20139."
+  }
+}

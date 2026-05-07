@@ -1,0 +1,387 @@
+{
+  "experiment": "Corruption-sensitivity: SHAP response to a label-correlated covariate",
+  "n_events": 50000,
+  "seeds": [
+    42,
+    123,
+    7,
+    2024,
+    99
+  ],
+  "canonical_features": [
+    "3rd_Harmonic",
+    "5th_Harmonic",
+    "Freq_deviation",
+    "Freq_min",
+    "Freq_std",
+    "RoCoF_max",
+    "RoCoF_mean",
+    "THD",
+    "V_imbalance"
+  ],
+  "spurious_features": {
+    "Label_Proxy": "Noisy class label, r≈0.961 with y (label leakage)",
+    "Random_Walk": "Random walk, r≈0.004 with y (unrelated confound)"
+  },
+  "clean_model": {
+    "acc_mean": 0.9411,
+    "acc_std": 0.0028,
+    "f1_mean": 0.9423,
+    "f1_std": 0.0028,
+    "alignment_verdict": "PASS",
+    "shap_ranking": [
+      {
+        "rank": 1,
+        "feature": "V_imbalance",
+        "mean_abs_shap": 0.082915,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 2,
+        "feature": "Freq_min",
+        "mean_abs_shap": 0.050225,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 3,
+        "feature": "Freq_deviation",
+        "mean_abs_shap": 0.045501,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 4,
+        "feature": "3rd_Harmonic",
+        "mean_abs_shap": 0.035895,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 5,
+        "feature": "Freq_mean",
+        "mean_abs_shap": 0.035345,
+        "is_spurious": false,
+        "is_canonical": false
+      },
+      {
+        "rank": 6,
+        "feature": "Freq_std",
+        "mean_abs_shap": 0.032383,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 7,
+        "feature": "RoCoF_max",
+        "mean_abs_shap": 0.023241,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 8,
+        "feature": "5th_Harmonic",
+        "mean_abs_shap": 0.018234,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 9,
+        "feature": "THD",
+        "mean_abs_shap": 0.017734,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 10,
+        "feature": "V_a_RMS",
+        "mean_abs_shap": 0.014339,
+        "is_spurious": false,
+        "is_canonical": false
+      },
+      {
+        "rank": 11,
+        "feature": "V_b_RMS",
+        "mean_abs_shap": 0.006361,
+        "is_spurious": false,
+        "is_canonical": false
+      },
+      {
+        "rank": 12,
+        "feature": "V_c_RMS",
+        "mean_abs_shap": 0.005224,
+        "is_spurious": false,
+        "is_canonical": false
+      },
+      {
+        "rank": 13,
+        "feature": "Freq_max",
+        "mean_abs_shap": 0.004583,
+        "is_spurious": false,
+        "is_canonical": false
+      },
+      {
+        "rank": 14,
+        "feature": "V_magnitude",
+        "mean_abs_shap": 0.004418,
+        "is_spurious": false,
+        "is_canonical": false
+      },
+      {
+        "rank": 15,
+        "feature": "RoCoF_mean",
+        "mean_abs_shap": 0.002783,
+        "is_spurious": false,
+        "is_canonical": true
+      }
+    ]
+  },
+  "corrupted_model_a": {
+    "spurious_feature": "Label_Proxy",
+    "spurious_correlation_with_label": 0.961,
+    "acc_mean": 0.9954,
+    "acc_std": 0.0005,
+    "f1_mean": 0.9954,
+    "f1_std": 0.0005,
+    "alignment_verdict": "PASS",
+    "shap_ranking": [
+      {
+        "rank": 1,
+        "feature": "Label_Proxy",
+        "mean_abs_shap": 0.109812,
+        "is_spurious": true,
+        "is_canonical": false
+      },
+      {
+        "rank": 2,
+        "feature": "V_imbalance",
+        "mean_abs_shap": 0.070392,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 3,
+        "feature": "Freq_min",
+        "mean_abs_shap": 0.048619,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 4,
+        "feature": "3rd_Harmonic",
+        "mean_abs_shap": 0.036269,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 5,
+        "feature": "Freq_deviation",
+        "mean_abs_shap": 0.021143,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 6,
+        "feature": "Freq_std",
+        "mean_abs_shap": 0.020953,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 7,
+        "feature": "Freq_mean",
+        "mean_abs_shap": 0.017348,
+        "is_spurious": false,
+        "is_canonical": false
+      },
+      {
+        "rank": 8,
+        "feature": "RoCoF_max",
+        "mean_abs_shap": 0.016462,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 9,
+        "feature": "5th_Harmonic",
+        "mean_abs_shap": 0.015209,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 10,
+        "feature": "V_a_RMS",
+        "mean_abs_shap": 0.01222,
+        "is_spurious": false,
+        "is_canonical": false
+      },
+      {
+        "rank": 11,
+        "feature": "THD",
+        "mean_abs_shap": 0.010719,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 12,
+        "feature": "V_b_RMS",
+        "mean_abs_shap": 0.00439,
+        "is_spurious": false,
+        "is_canonical": false
+      },
+      {
+        "rank": 13,
+        "feature": "V_c_RMS",
+        "mean_abs_shap": 0.002977,
+        "is_spurious": false,
+        "is_canonical": false
+      },
+      {
+        "rank": 14,
+        "feature": "V_magnitude",
+        "mean_abs_shap": 0.002825,
+        "is_spurious": false,
+        "is_canonical": false
+      },
+      {
+        "rank": 15,
+        "feature": "Freq_max",
+        "mean_abs_shap": 0.002038,
+        "is_spurious": false,
+        "is_canonical": false
+      },
+      {
+        "rank": 16,
+        "feature": "RoCoF_mean",
+        "mean_abs_shap": 0.000725,
+        "is_spurious": false,
+        "is_canonical": true
+      }
+    ]
+  },
+  "corrupted_model_b": {
+    "spurious_feature": "Random_Walk",
+    "spurious_correlation_with_label": 0.004,
+    "acc_mean": 0.9428,
+    "acc_std": 0.0024,
+    "f1_mean": 0.944,
+    "f1_std": 0.0024,
+    "alignment_verdict": "PASS",
+    "shap_ranking": [
+      {
+        "rank": 1,
+        "feature": "V_imbalance",
+        "mean_abs_shap": 0.077836,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 2,
+        "feature": "Freq_min",
+        "mean_abs_shap": 0.055143,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 3,
+        "feature": "Freq_deviation",
+        "mean_abs_shap": 0.044691,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 4,
+        "feature": "3rd_Harmonic",
+        "mean_abs_shap": 0.044156,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 5,
+        "feature": "Freq_mean",
+        "mean_abs_shap": 0.035861,
+        "is_spurious": false,
+        "is_canonical": false
+      },
+      {
+        "rank": 6,
+        "feature": "Freq_std",
+        "mean_abs_shap": 0.032865,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 7,
+        "feature": "RoCoF_max",
+        "mean_abs_shap": 0.022263,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 8,
+        "feature": "5th_Harmonic",
+        "mean_abs_shap": 0.02037,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 9,
+        "feature": "THD",
+        "mean_abs_shap": 0.015446,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 10,
+        "feature": "V_a_RMS",
+        "mean_abs_shap": 0.011943,
+        "is_spurious": false,
+        "is_canonical": false
+      },
+      {
+        "rank": 11,
+        "feature": "V_b_RMS",
+        "mean_abs_shap": 0.006035,
+        "is_spurious": false,
+        "is_canonical": false
+      },
+      {
+        "rank": 12,
+        "feature": "V_c_RMS",
+        "mean_abs_shap": 0.004325,
+        "is_spurious": false,
+        "is_canonical": false
+      },
+      {
+        "rank": 13,
+        "feature": "Freq_max",
+        "mean_abs_shap": 0.004082,
+        "is_spurious": false,
+        "is_canonical": false
+      },
+      {
+        "rank": 14,
+        "feature": "V_magnitude",
+        "mean_abs_shap": 0.003431,
+        "is_spurious": false,
+        "is_canonical": false
+      },
+      {
+        "rank": 15,
+        "feature": "RoCoF_mean",
+        "mean_abs_shap": 0.002464,
+        "is_spurious": false,
+        "is_canonical": true
+      },
+      {
+        "rank": 16,
+        "feature": "Random_Walk",
+        "mean_abs_shap": 0.000197,
+        "is_spurious": true,
+        "is_canonical": false
+      }
+    ]
+  },
+  "conclusion": "On the deliberately extreme label-proxy variant (Corrupt-A, Pearson r ~ 0.96), SHAP ranks the proxy feature first; the random-walk control (Corrupt-B) is ranked last. The proxy is detectable by any reasonable importance method; this is reported as a sensitivity check, not as a generalisable detection guarantee."
+}

@@ -1,0 +1,31 @@
+# Generated data (reproduce via rebuild_experiments.py)
+data/clean/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Model checkpoints (use models/cnn_1d.pt — already committed)
+*.pkl
+*.pickle
+*.ckpt
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Kaggle credentials
+kaggle.json

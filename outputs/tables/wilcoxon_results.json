@@ -1,0 +1,78 @@
+{
+  "accuracy": [
+    {
+      "baseline": "Gradient Boosting",
+      "mean_delta_acc_pp": 4.32,
+      "ci_lo_pp": 4.1179,
+      "ci_hi_pp": 4.5221,
+      "W": 15.0,
+      "p_one_tailed": 0.03125,
+      "effect_r": 1.0,
+      "significant_005": true
+    },
+    {
+      "baseline": "Random Forest",
+      "mean_delta_acc_pp": 5.6,
+      "ci_lo_pp": 5.4296,
+      "ci_hi_pp": 5.7704,
+      "W": 15.0,
+      "p_one_tailed": 0.03125,
+      "effect_r": 1.0,
+      "significant_005": true
+    },
+    {
+      "baseline": "Logistic Regression",
+      "mean_delta_acc_pp": 5.1467,
+      "ci_lo_pp": 4.739,
+      "ci_hi_pp": 5.5544,
+      "W": 15.0,
+      "p_one_tailed": 0.03125,
+      "effect_r": 1.0,
+      "significant_005": true
+    },
+    {
+      "baseline": "Decision Tree",
+      "mean_delta_acc_pp": 6.6267,
+      "ci_lo_pp": 6.4067,
+      "ci_hi_pp": 6.8466,
+      "W": 15.0,
+      "p_one_tailed": 0.03125,
+      "effect_r": 1.0,
+      "significant_005": true
+    },
+    {
+      "baseline": "Shallow CNN",
+      "mean_delta_acc_pp": 2.6853,
+      "ci_lo_pp": 1.4619,
+      "ci_hi_pp": 3.9088,
+      "W": 15.0,
+      "p_one_tailed": 0.03125,
+      "effect_r": 1.0,
+      "significant_005": true
+    },
+    {
+      "baseline": "BiLSTM + Attn",
+      "mean_delta_acc_pp": 4.9013,
+      "ci_lo_pp": 3.491,
+      "ci_hi_pp": 6.3116,
+      "W": 15.0,
+      "p_one_tailed": 0.03125,
+      "effect_r": 1.0,
+      "significant_005": true
+    }
+  ],
+  "metadata": {
+    "seeds": [
+      42,
+      123,
+      7,
+      2024,
+      99
+    ],
+    "alpha": 0.05,
+    "test": "wilcoxon signed-rank",
+    "alternative": "greater one-tailed",
+    "N": 5,
+    "min_achievable_p": 0.03125
+  }
+}
