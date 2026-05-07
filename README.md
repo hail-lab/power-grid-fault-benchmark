@@ -4,9 +4,8 @@
 
 Code, simulator, and reproducibility scripts for the manuscript:
 
-> **A Reproducible Synthetic Benchmark and Compact 1D-CNN Reference Implementation
-> for Physics-Informed Power System Fault Classification with SHAP-Based Consistency
-> Checking.**
+> **A Reproducible Synthetic Benchmark for Physics-Informed Power System Fault
+>  Classification with SHAP-Based Consistency Analysis.**
 
 ---
 
@@ -188,9 +187,8 @@ MIT. See [LICENSE](LICENSE).
 
 ```bibtex
 @article{aljaloud2026fault,
-  title   = {A Reproducible Synthetic Benchmark and Compact 1D-CNN Reference
-             Implementation for Physics-Informed Power System Fault
-             Classification with SHAP-Based Consistency Checking},
+  title   = {A Reproducible Synthetic Benchmark for Physics-Informed 
+  Power System Fault Classification with SHAP-Based Consistency Analysis},
   author  = {Aljaloud, Saud},
   journal = {Heliyon},
   year    = {2026},
