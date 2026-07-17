@@ -1,0 +1,39 @@
+{
+  "r_achieved_mean": -0.0008542500558101241,
+  "acc_mean": 0.7375733333333334,
+  "acc_std": 0.005208881304507191,
+  "shap_rank_mean": 16.0,
+  "shap_rank_worst": 16,
+  "per_seed": [
+    {
+      "seed": 42,
+      "r_achieved": 0.00016172042695509144,
+      "accuracy": 0.7434666666666667,
+      "shap_rank_of_rw": 16
+    },
+    {
+      "seed": 123,
+      "r_achieved": -0.00033268643234266005,
+      "accuracy": 0.7312,
+      "shap_rank_of_rw": 16
+    },
+    {
+      "seed": 7,
+      "r_achieved": 0.00022811575616234084,
+      "accuracy": 0.7365333333333334,
+      "shap_rank_of_rw": 16
+    },
+    {
+      "seed": 2024,
+      "r_achieved": -0.0010619772442653432,
+      "accuracy": 0.7344,
+      "shap_rank_of_rw": 16
+    },
+    {
+      "seed": 99,
+      "r_achieved": -0.003266422785560049,
+      "accuracy": 0.7422666666666666,
+      "shap_rank_of_rw": 16
+    }
+  ]
+}

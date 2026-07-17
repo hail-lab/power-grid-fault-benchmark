@@ -1,0 +1,247 @@
+{
+  "42": {
+    "Gradient Boosting": {
+      "train_s": 3.4761319160461426
+    },
+    "Random Forest": {
+      "train_s": 24.00273585319519
+    },
+    "Logistic Regression": {
+      "train_s": 1.8939611911773682
+    },
+    "Decision Tree": {
+      "train_s": 1.1376221179962158
+    },
+    "kNN (k=5)": {
+      "train_s": 0.08490681648254395
+    },
+    "MLP (128-64)": {
+      "train_s": 11.136795997619629
+    },
+    "SVM (RBF)": {
+      "train_s": 28.751092672348022
+    },
+    "XGBoost": {
+      "train_s": 5.437183141708374
+    },
+    "LightGBM": {
+      "train_s": 5.090081453323364
+    },
+    "1D-CNN (proposed)": {
+      "train_s": 27.676013946533203,
+      "n_params": 70950,
+      "peak_cuda_mb": 453.085696
+    },
+    "Shallow CNN": {
+      "train_s": 33.27304649353027,
+      "n_params": 11622,
+      "peak_cuda_mb": 410.010112
+    },
+    "BiLSTM + Attn": {
+      "train_s": 214.41150164604187,
+      "n_params": 136071,
+      "peak_cuda_mb": 1454.904832
+    },
+    "TCN": {
+      "train_s": 86.29386043548584,
+      "n_params": 66934,
+      "peak_cuda_mb": 578.046464
+    }
+  },
+  "123": {
+    "Gradient Boosting": {
+      "train_s": 4.213123559951782
+    },
+    "Random Forest": {
+      "train_s": 23.20375418663025
+    },
+    "Logistic Regression": {
+      "train_s": 2.3519890308380127
+    },
+    "Decision Tree": {
+      "train_s": 1.5376107692718506
+    },
+    "kNN (k=5)": {
+      "train_s": 0.13988518714904785
+    },
+    "MLP (128-64)": {
+      "train_s": 11.644042491912842
+    },
+    "SVM (RBF)": {
+      "train_s": 27.835062503814697
+    },
+    "XGBoost": {
+      "train_s": 5.157280921936035
+    },
+    "LightGBM": {
+      "train_s": 4.021585702896118
+    },
+    "1D-CNN (proposed)": {
+      "train_s": 38.22129774093628,
+      "n_params": 70950,
+      "peak_cuda_mb": 454.068736
+    },
+    "Shallow CNN": {
+      "train_s": 52.18931293487549,
+      "n_params": 11622,
+      "peak_cuda_mb": 410.993152
+    },
+    "BiLSTM + Attn": {
+      "train_s": 461.78100204467773,
+      "n_params": 136071,
+      "peak_cuda_mb": 1454.904832
+    },
+    "TCN": {
+      "train_s": 79.5903012752533,
+      "n_params": 66934,
+      "peak_cuda_mb": 578.046464
+    }
+  },
+  "7": {
+    "Gradient Boosting": {
+      "train_s": 4.593408823013306
+    },
+    "Random Forest": {
+      "train_s": 23.485626459121704
+    },
+    "Logistic Regression": {
+      "train_s": 2.1359469890594482
+    },
+    "Decision Tree": {
+      "train_s": 1.1171619892120361
+    },
+    "kNN (k=5)": {
+      "train_s": 0.071014404296875
+    },
+    "MLP (128-64)": {
+      "train_s": 13.76199746131897
+    },
+    "SVM (RBF)": {
+      "train_s": 29.194305181503296
+    },
+    "XGBoost": {
+      "train_s": 6.061961889266968
+    },
+    "LightGBM": {
+      "train_s": 3.965463638305664
+    },
+    "1D-CNN (proposed)": {
+      "train_s": 46.28016018867493,
+      "n_params": 70950,
+      "peak_cuda_mb": 454.068736
+    },
+    "Shallow CNN": {
+      "train_s": 51.551629304885864,
+      "n_params": 11622,
+      "peak_cuda_mb": 410.993152
+    },
+    "BiLSTM + Attn": {
+      "train_s": 199.03348541259766,
+      "n_params": 136071,
+      "peak_cuda_mb": 1454.904832
+    },
+    "TCN": {
+      "train_s": 96.83675813674927,
+      "n_params": 66934,
+      "peak_cuda_mb": 578.046464
+    }
+  },
+  "2024": {
+    "Gradient Boosting": {
+      "train_s": 4.309293985366821
+    },
+    "Random Forest": {
+      "train_s": 23.202234983444214
+    },
+    "Logistic Regression": {
+      "train_s": 2.3230717182159424
+    },
+    "Decision Tree": {
+      "train_s": 1.0991730690002441
+    },
+    "kNN (k=5)": {
+      "train_s": 0.07294106483459473
+    },
+    "MLP (128-64)": {
+      "train_s": 22.83510732650757
+    },
+    "SVM (RBF)": {
+      "train_s": 28.13323426246643
+    },
+    "XGBoost": {
+      "train_s": 5.206622123718262
+    },
+    "LightGBM": {
+      "train_s": 4.983497142791748
+    },
+    "1D-CNN (proposed)": {
+      "train_s": 25.454739570617676,
+      "n_params": 70950,
+      "peak_cuda_mb": 454.068736
+    },
+    "Shallow CNN": {
+      "train_s": 51.28577136993408,
+      "n_params": 11622,
+      "peak_cuda_mb": 410.993152
+    },
+    "BiLSTM + Attn": {
+      "train_s": 125.62383961677551,
+      "n_params": 136071,
+      "peak_cuda_mb": 1454.904832
+    },
+    "TCN": {
+      "train_s": 51.51947736740112,
+      "n_params": 66934,
+      "peak_cuda_mb": 578.046464
+    }
+  },
+  "99": {
+    "Gradient Boosting": {
+      "train_s": 4.1239025592803955
+    },
+    "Random Forest": {
+      "train_s": 23.078816652297974
+    },
+    "Logistic Regression": {
+      "train_s": 2.200409173965454
+    },
+    "Decision Tree": {
+      "train_s": 1.3171167373657227
+    },
+    "kNN (k=5)": {
+      "train_s": 0.13082313537597656
+    },
+    "MLP (128-64)": {
+      "train_s": 10.772277355194092
+    },
+    "SVM (RBF)": {
+      "train_s": 27.93121075630188
+    },
+    "XGBoost": {
+      "train_s": 5.150779724121094
+    },
+    "LightGBM": {
+      "train_s": 3.888751983642578
+    },
+    "1D-CNN (proposed)": {
+      "train_s": 30.50861930847168,
+      "n_params": 70950,
+      "peak_cuda_mb": 454.068736
+    },
+    "Shallow CNN": {
+      "train_s": 50.91296172142029,
+      "n_params": 11622,
+      "peak_cuda_mb": 410.993152
+    },
+    "BiLSTM + Attn": {
+      "train_s": 271.52856516838074,
+      "n_params": 136071,
+      "peak_cuda_mb": 1454.904832
+    },
+    "TCN": {
+      "train_s": 69.43396592140198,
+      "n_params": 66934,
+      "peak_cuda_mb": 578.046464
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "hardware": {
+    "cpu": "Intel i7-12700",
+    "gpu": "NVIDIA GeForce RTX 3060"
+  },
+  "1D-CNN": {
+    "params": 70950,
+    "cpu_ms": 0.3262001555413008,
+    "torchscript_cpu_ms": 0.2544000744819641,
+    "gpu_ms": 0.5205499473959208,
+    "flops_m": 12.2
+  },
+  "TCN": {
+    "params": 66934,
+    "cpu_ms": 1.221449812874198,
+    "torchscript_cpu_ms": 1.0288001503795385,
+    "gpu_ms": 0.8833999745547771,
+    "flops_m": 65.5
+  },
+  "Gradient Boosting": {
+    "cpu_ms": 5.053799832239747
+  },
+  "XGBoost": {
+    "cpu_ms": 0.5024501588195562
+  },
+  "Random Forest": {
+    "cpu_ms": 31.477699987590313
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "Gradient Boosting": {
+    "repro_acc": 0.7705333333333333,
+    "pub_acc": 0.9549333333333333,
+    "delta": -0.1844,
+    "flag": "MISMATCH"
+  },
+  "Random Forest": {
+    "repro_acc": 0.7432,
+    "pub_acc": 0.9416,
+    "delta": -0.19840000000000002,
+    "flag": "MISMATCH"
+  },
+  "Logistic Regression": {
+    "repro_acc": 0.734,
+    "pub_acc": 0.9458666666666666,
+    "delta": -0.21186666666666665,
+    "flag": "MISMATCH"
+  },
+  "Decision Tree": {
+    "repro_acc": 0.706,
+    "pub_acc": 0.9318666666666666,
+    "delta": -0.22586666666666666,
+    "flag": "MISMATCH"
+  },
+  "1D-CNN (proposed)": {
+    "repro_acc": 0.9586666666666667,
+    "pub_acc": 0.9970666666666667,
+    "delta": -0.03839999999999999,
+    "flag": "MISMATCH"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "Normal": {
+    "precision": 0.9792780748663101,
+    "recall": 0.9766666666666667,
+    "f1-score": 0.9779706275033377,
+    "support": 1500.0
+  },
+  "SLG Fault": {
+    "precision": 0.968497576736672,
+    "recall": 0.9991666666666666,
+    "f1-score": 0.9835931091058244,
+    "support": 1200.0
+  },
+  "3-Phase Fault": {
+    "precision": 0.9925496688741722,
+    "recall": 0.9991666666666666,
+    "f1-score": 0.9958471760797342,
+    "support": 1200.0
+  },
+  "Transient": {
+    "precision": 0.9421915444348576,
+    "recall": 0.91,
+    "f1-score": 0.9258160237388724,
+    "support": 1200.0
+  },
+  "Harmonic": {
+    "precision": 1.0,
+    "recall": 0.9725,
+    "f1-score": 0.9860583016476553,
+    "support": 1200.0
+  },
+  "Under-Freq": {
+    "precision": 0.911525974025974,
+    "recall": 0.9358333333333333,
+    "f1-score": 0.9235197368421053,
+    "support": 1200.0
+  },
+  "accuracy": 0.966,
+  "macro avg": {
+    "precision": 0.9656738064896643,
+    "recall": 0.9655555555555555,
+    "f1-score": 0.9654674958195882,
+    "support": 7500.0
+  },
+  "weighted avg": {
+    "precision": 0.9662179772247302,
+    "recall": 0.966,
+    "f1-score": 0.9659676210869383,
+    "support": 7500.0
+  }
+}
