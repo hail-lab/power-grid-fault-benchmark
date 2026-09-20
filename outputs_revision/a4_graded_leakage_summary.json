@@ -1,0 +1,34 @@
+{
+  "0.3": {
+    "r_achieved_mean": 0.29886329790623495,
+    "r2_rank_mean": 2.0,
+    "shap_rank_mean": 6.4,
+    "shap_rank_worst": 7,
+    "acc_mean": 0.7475466666666667,
+    "detected_at_rank1_frac": 0.0
+  },
+  "0.5": {
+    "r_achieved_mean": 0.49949631999781063,
+    "r2_rank_mean": 1.0,
+    "shap_rank_mean": 4.6,
+    "shap_rank_worst": 5,
+    "acc_mean": 0.7726933333333333,
+    "detected_at_rank1_frac": 0.0
+  },
+  "0.7": {
+    "r_achieved_mean": 0.7000153295298636,
+    "r2_rank_mean": 1.0,
+    "shap_rank_mean": 2.0,
+    "shap_rank_worst": 2,
+    "acc_mean": 0.8166933333333333,
+    "detected_at_rank1_frac": 0.0
+  },
+  "0.96": {
+    "r_achieved_mean": 0.9601099200387712,
+    "r2_rank_mean": 1.0,
+    "shap_rank_mean": 1.0,
+    "shap_rank_worst": 1,
+    "acc_mean": 0.9537333333333333,
+    "detected_at_rank1_frac": 1.0
+  }
+}

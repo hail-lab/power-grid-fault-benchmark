@@ -1,0 +1,202 @@
+[
+  {
+    "r_target": 0.3,
+    "seed": 42,
+    "r_achieved": 0.2963535147277175,
+    "r2_rank_of_proxy": 2,
+    "shap_rank_of_proxy": 6,
+    "accuracy": 0.7536,
+    "proxy_mean_abs_shap": 0.014947459938524312,
+    "top_feature": "3rd_Harmonic"
+  },
+  {
+    "r_target": 0.3,
+    "seed": 123,
+    "r_achieved": 0.29828537345819217,
+    "r2_rank_of_proxy": 2,
+    "shap_rank_of_proxy": 6,
+    "accuracy": 0.7368,
+    "proxy_mean_abs_shap": 0.014837924221390495,
+    "top_feature": "3rd_Harmonic"
+  },
+  {
+    "r_target": 0.3,
+    "seed": 7,
+    "r_achieved": 0.2994072408411013,
+    "r2_rank_of_proxy": 2,
+    "shap_rank_of_proxy": 7,
+    "accuracy": 0.752,
+    "proxy_mean_abs_shap": 0.013939942994316864,
+    "top_feature": "3rd_Harmonic"
+  },
+  {
+    "r_target": 0.3,
+    "seed": 2024,
+    "r_achieved": 0.29664715573766687,
+    "r2_rank_of_proxy": 2,
+    "shap_rank_of_proxy": 7,
+    "accuracy": 0.7457333333333334,
+    "proxy_mean_abs_shap": 0.015720072685632747,
+    "top_feature": "3rd_Harmonic"
+  },
+  {
+    "r_target": 0.3,
+    "seed": 99,
+    "r_achieved": 0.30362320476649696,
+    "r2_rank_of_proxy": 2,
+    "shap_rank_of_proxy": 6,
+    "accuracy": 0.7496,
+    "proxy_mean_abs_shap": 0.01647480669997777,
+    "top_feature": "3rd_Harmonic"
+  },
+  {
+    "r_target": 0.5,
+    "seed": 42,
+    "r_achieved": 0.4968223979741312,
+    "r2_rank_of_proxy": 1,
+    "shap_rank_of_proxy": 5,
+    "accuracy": 0.7725333333333333,
+    "proxy_mean_abs_shap": 0.03515260707761604,
+    "top_feature": "3rd_Harmonic"
+  },
+  {
+    "r_target": 0.5,
+    "seed": 123,
+    "r_achieved": 0.49873045667504673,
+    "r2_rank_of_proxy": 1,
+    "shap_rank_of_proxy": 5,
+    "accuracy": 0.7629333333333334,
+    "proxy_mean_abs_shap": 0.03517149140674015,
+    "top_feature": "3rd_Harmonic"
+  },
+  {
+    "r_target": 0.5,
+    "seed": 7,
+    "r_achieved": 0.5001225277371748,
+    "r2_rank_of_proxy": 1,
+    "shap_rank_of_proxy": 5,
+    "accuracy": 0.7772,
+    "proxy_mean_abs_shap": 0.033224193874985236,
+    "top_feature": "3rd_Harmonic"
+  },
+  {
+    "r_target": 0.5,
+    "seed": 2024,
+    "r_achieved": 0.4980971313388906,
+    "r2_rank_of_proxy": 1,
+    "shap_rank_of_proxy": 4,
+    "accuracy": 0.7748,
+    "proxy_mean_abs_shap": 0.03660913511154422,
+    "top_feature": "3rd_Harmonic"
+  },
+  {
+    "r_target": 0.5,
+    "seed": 99,
+    "r_achieved": 0.50370908626381,
+    "r2_rank_of_proxy": 1,
+    "shap_rank_of_proxy": 4,
+    "accuracy": 0.776,
+    "proxy_mean_abs_shap": 0.037180306457480265,
+    "top_feature": "3rd_Harmonic"
+  },
+  {
+    "r_target": 0.7,
+    "seed": 42,
+    "r_achieved": 0.6978325839409708,
+    "r2_rank_of_proxy": 1,
+    "shap_rank_of_proxy": 2,
+    "accuracy": 0.8170666666666667,
+    "proxy_mean_abs_shap": 0.06515747502379624,
+    "top_feature": "3rd_Harmonic"
+  },
+  {
+    "r_target": 0.7,
+    "seed": 123,
+    "r_achieved": 0.6992999524619659,
+    "r2_rank_of_proxy": 1,
+    "shap_rank_of_proxy": 2,
+    "accuracy": 0.8057333333333333,
+    "proxy_mean_abs_shap": 0.06758065869536461,
+    "top_feature": "3rd_Harmonic"
+  },
+  {
+    "r_target": 0.7,
+    "seed": 7,
+    "r_achieved": 0.7005544106471744,
+    "r2_rank_of_proxy": 1,
+    "shap_rank_of_proxy": 2,
+    "accuracy": 0.8218666666666666,
+    "proxy_mean_abs_shap": 0.06710912886181436,
+    "top_feature": "3rd_Harmonic"
+  },
+  {
+    "r_target": 0.7,
+    "seed": 2024,
+    "r_achieved": 0.6994545326745719,
+    "r2_rank_of_proxy": 1,
+    "shap_rank_of_proxy": 2,
+    "accuracy": 0.8190666666666667,
+    "proxy_mean_abs_shap": 0.07102387991613057,
+    "top_feature": "3rd_Harmonic"
+  },
+  {
+    "r_target": 0.7,
+    "seed": 99,
+    "r_achieved": 0.7029351679246348,
+    "r2_rank_of_proxy": 1,
+    "shap_rank_of_proxy": 2,
+    "accuracy": 0.8197333333333333,
+    "proxy_mean_abs_shap": 0.06697776353533799,
+    "top_feature": "3rd_Harmonic"
+  },
+  {
+    "r_target": 0.96,
+    "seed": 42,
+    "r_achieved": 0.9597288080261764,
+    "r2_rank_of_proxy": 1,
+    "shap_rank_of_proxy": 1,
+    "accuracy": 0.9534666666666667,
+    "proxy_mean_abs_shap": 0.1479695997663279,
+    "top_feature": "Label_Proxy_r0.96"
+  },
+  {
+    "r_target": 0.96,
+    "seed": 123,
+    "r_achieved": 0.9599622163857483,
+    "r2_rank_of_proxy": 1,
+    "shap_rank_of_proxy": 1,
+    "accuracy": 0.9498666666666666,
+    "proxy_mean_abs_shap": 0.14957530642947658,
+    "top_feature": "Label_Proxy_r0.96"
+  },
+  {
+    "r_target": 0.96,
+    "seed": 7,
+    "r_achieved": 0.9602107853851528,
+    "r2_rank_of_proxy": 1,
+    "shap_rank_of_proxy": 1,
+    "accuracy": 0.9561333333333333,
+    "proxy_mean_abs_shap": 0.14721205791670808,
+    "top_feature": "Label_Proxy_r0.96"
+  },
+  {
+    "r_target": 0.96,
+    "seed": 2024,
+    "r_achieved": 0.9601572410752154,
+    "r2_rank_of_proxy": 1,
+    "shap_rank_of_proxy": 1,
+    "accuracy": 0.954,
+    "proxy_mean_abs_shap": 0.14579613921942725,
+    "top_feature": "Label_Proxy_r0.96"
+  },
+  {
+    "r_target": 0.96,
+    "seed": 99,
+    "r_achieved": 0.9604905493215627,
+    "r2_rank_of_proxy": 1,
+    "shap_rank_of_proxy": 1,
+    "accuracy": 0.9552,
+    "proxy_mean_abs_shap": 0.14971378325493448,
+    "top_feature": "Label_Proxy_r0.96"
+  }
+]

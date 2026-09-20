@@ -1,0 +1,119 @@
+{
+  "_provenance": {
+    "host": "DESKTOP-WTF",
+    "os": "Windows 11",
+    "python": "3.14.3",
+    "numpy": "2.4.6",
+    "scipy": "1.18.1",
+    "pandapower": "3.5.4",
+    "numba": "absent (pandapower no_numba fallback)"
+  },
+  "cases": {
+    "case14": {
+      "n_bus": 14,
+      "n_line": 15,
+      "n_trafo": 5,
+      "n_gen": 5,
+      "n_load": 11,
+      "s_base_mva": 100.0,
+      "base_kv_levels": [
+        0.208,
+        12.0,
+        14.0,
+        135.0
+      ],
+      "total_load_mw": 259.0,
+      "total_load_mvar": 73.5,
+      "total_gen_mw": 272.39327235161227,
+      "losses_mw": 13.393272351612268,
+      "vm_pu_min": 1.01,
+      "vm_pu_max": 1.09,
+      "va_deg_min": -16.033644528856104,
+      "va_deg_max": 0.0,
+      "line_loading_max_pct": 1.5075683619090712,
+      "line_loading_mean_pct": 0.35732673258267145,
+      "fault_level_mva_min": 361.3120021138682,
+      "fault_level_mva_median": 907.5931081382969,
+      "fault_level_mva_max": 4054.048117415625
+    },
+    "case30": {
+      "n_bus": 30,
+      "n_line": 41,
+      "n_trafo": 0,
+      "n_gen": 6,
+      "n_load": 20,
+      "s_base_mva": 100.0,
+      "base_kv_levels": [
+        135.0
+      ],
+      "total_load_mw": 189.2,
+      "total_load_mvar": 107.20000000000002,
+      "total_gen_mw": 191.6438031318736,
+      "losses_mw": 2.443803131873608,
+      "vm_pu_min": 0.9606237083025243,
+      "vm_pu_max": 1.0,
+      "va_deg_min": -3.958204695655952,
+      "va_deg_max": 1.476163251926089,
+      "line_loading_max_pct": 111.83140586617537,
+      "line_loading_mean_pct": 30.332094938596136,
+      "fault_level_mva_min": 127.19096973180866,
+      "fault_level_mva_median": 548.2889820002022,
+      "fault_level_mva_max": 1449.7749085027908
+    },
+    "case57": {
+      "n_bus": 57,
+      "n_line": 63,
+      "n_trafo": 17,
+      "n_gen": 7,
+      "n_load": 42,
+      "s_base_mva": 100.0,
+      "base_kv_levels": [
+        115.0,
+        138.0,
+        161.0,
+        230.0,
+        345.0,
+        500.0
+      ],
+      "total_load_mw": 1250.8,
+      "total_load_mvar": 336.4,
+      "total_gen_mw": 1281.0902075736906,
+      "losses_mw": 30.290207573690623,
+      "vm_pu_min": 0.719913679370304,
+      "vm_pu_max": 1.04,
+      "va_deg_min": -23.916820323843066,
+      "va_deg_max": 0.0,
+      "line_loading_max_pct": 1.7838280504322526,
+      "line_loading_mean_pct": 0.3073099489266707,
+      "fault_level_mva_min": 53.66310980978994,
+      "fault_level_mva_median": 558.8983033770342,
+      "fault_level_mva_max": 7083.881319132821
+    },
+    "case118": {
+      "n_bus": 118,
+      "n_line": 173,
+      "n_trafo": 13,
+      "n_gen": 54,
+      "n_load": 99,
+      "s_base_mva": 100.0,
+      "base_kv_levels": [
+        138.0,
+        161.0,
+        345.0
+      ],
+      "total_load_mw": 4242.0,
+      "total_load_mvar": 1438.0,
+      "total_gen_mw": 4375.1696937343695,
+      "losses_mw": 133.1696937343695,
+      "vm_pu_min": 0.943,
+      "vm_pu_max": 1.0500000000000003,
+      "va_deg_min": 7.01776127887249,
+      "va_deg_max": 39.77187892178401,
+      "line_loading_max_pct": 4.475087324337677,
+      "line_loading_mean_pct": 0.5129387734685574,
+      "fault_level_mva_min": 531.8945712793106,
+      "fault_level_mva_median": 2031.3955944331356,
+      "fault_level_mva_max": 10920.482823519043
+    }
+  }
+}

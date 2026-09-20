@@ -1,0 +1,67 @@
+{
+  "confusion_cnn": {
+    "accuracy": 0.9732,
+    "transient_underfreq_both_directions": 122,
+    "transient_to_underfreq": 67,
+    "underfreq_to_transient": 55,
+    "total_errors": 201
+  },
+  "confusion_baselines": {
+    "TCN": 0.9806666666666667,
+    "Gradient Boosting": 0.7705333333333333,
+    "XGBoost": 0.7725333333333333,
+    "Random Forest": 0.7424
+  },
+  "tsne": {
+    "n_misclassified": 201,
+    "n_points": 7500
+  },
+  "shap_cnn": {
+    "voltage_share": 0.717737516687251,
+    "frequency_share": 0.2822624833127489,
+    "dominant_voltage_channel": "$V_a$"
+  },
+  "shap_rf": {
+    "top3": [
+      "3rd_Harmonic",
+      "5th_Harmonic",
+      "Freq_min"
+    ],
+    "top3_values": [
+      0.08257342129945755,
+      0.04394717887043953,
+      0.038813360035419464
+    ],
+    "harmonic_mass_share": 0.46151965856552124
+  },
+  "shap_dependence": {
+    "n_points": 500
+  },
+  "rank_stability": {
+    "top8": [
+      "3rd_Harmonic",
+      "5th_Harmonic",
+      "Freq_min",
+      "Freq_mean",
+      "Freq_deviation",
+      "THD",
+      "V_a_RMS",
+      "V_magnitude"
+    ],
+    "rank1_stable": true
+  },
+  "leakage": {
+    "r": [
+      0.29886329790623495,
+      0.49949631999781063,
+      0.7000153295298636,
+      0.9601099200387712
+    ],
+    "shap_rank_mean": [
+      6.4,
+      4.6,
+      2.0,
+      1.0
+    ]
+  }
+}

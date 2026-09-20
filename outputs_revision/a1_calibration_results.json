@@ -1,0 +1,165 @@
+{
+  "per_case": {
+    "case14": {
+      "n_buses": 14,
+      "sag3ph_median": 0.6828684533774434,
+      "sagslg_median": 0.7883218491584899,
+      "fault_level_mva_min": 361.3120021138682,
+      "fault_level_mva_median": 907.5931081382969,
+      "fault_level_mva_max": 4054.048117415625
+    },
+    "case30": {
+      "n_buses": 30,
+      "sag3ph_median": 0.668815213703841,
+      "sagslg_median": 0.7533488651329674,
+      "fault_level_mva_min": 127.19096973180866,
+      "fault_level_mva_median": 548.2889820002022,
+      "fault_level_mva_max": 1449.7749085027908
+    },
+    "case57": {
+      "n_buses": 57,
+      "sag3ph_median": 0.8215072364449886,
+      "sagslg_median": 0.8575844144146785,
+      "fault_level_mva_min": 53.66310980978994,
+      "fault_level_mva_median": 558.8983033770342,
+      "fault_level_mva_max": 7083.881319132821
+    },
+    "case118": {
+      "n_buses": 118,
+      "sag3ph_median": 0.8702950161488296,
+      "sagslg_median": 0.8849810417794685,
+      "fault_level_mva_min": 531.8945712793106,
+      "fault_level_mva_median": 2031.3955944331356,
+      "fault_level_mva_max": 10920.482823519043
+    }
+  },
+  "sag_3ph_vs_class2_envelope": {
+    "n_sim": 96571,
+    "envelope": [
+      0.35,
+      0.75
+    ],
+    "coverage_of_envelope": 0.28584150521378054,
+    "ks_statistic_vs_envelope": 0.6407617193567428,
+    "sim_quantiles": {
+      "0.05": 0.25753690032233695,
+      "0.25": 0.6538710596000881,
+      "0.5": 0.827346838069651,
+      "0.75": 0.9069208259785397,
+      "0.95": 0.9433016746733682
+    }
+  },
+  "sag_slg_vs_class1_envelope": {
+    "n_sim": 214338,
+    "envelope": [
+      0.72,
+      0.95
+    ],
+    "coverage_of_envelope": 0.7489899131278634,
+    "ks_statistic_vs_envelope": 0.2510987319094141,
+    "sim_quantiles": {
+      "0.05": 0.36489360559625206,
+      "0.25": 0.719144024298461,
+      "0.5": 0.8532536362015135,
+      "0.75": 0.9156467005176087,
+      "0.95": 0.9444953435267172
+    }
+  },
+  "freq_nadir_vs_class5_envelope": {
+    "n_sim": 252,
+    "envelope": [
+      0.08,
+      0.55
+    ],
+    "coverage_of_envelope": 0.4087301587301587,
+    "ks_statistic_vs_envelope": 0.5952380952380951,
+    "sim_quantiles": {
+      "0.05": 0.20357085764733862,
+      "0.25": 0.40288853585010065,
+      "0.5": 0.643875111404607,
+      "0.75": 0.8813178065585628,
+      "0.95": 1.234058375142332
+    }
+  },
+  "freq_nadir_vs_class2_envelope": {
+    "n_sim": 252,
+    "envelope": [
+      0.2,
+      1.2
+    ],
+    "coverage_of_envelope": 0.9007936507936508,
+    "ks_statistic_vs_envelope": 0.09523809523809523,
+    "sim_quantiles": {
+      "0.05": 0.20357085764733862,
+      "0.25": 0.40288853585010065,
+      "0.5": 0.643875111404607,
+      "0.75": 0.8813178065585628,
+      "0.95": 1.234058375142332
+    }
+  },
+  "xdss_sensitivity": {
+    "0.15": {
+      "sag_3ph_coverage": 0.27353463587921845,
+      "sag_slg_coverage": 0.7576019294071635,
+      "sag_3ph_median": 0.8329374389165516,
+      "sag_slg_median": 0.8570845533656065
+    },
+    "0.20": {
+      "sag_3ph_coverage": 0.2826667514465569,
+      "sag_slg_coverage": 0.7521184307068149,
+      "sag_3ph_median": 0.8280767546062164,
+      "sag_slg_median": 0.854235059843226
+    },
+    "0.30": {
+      "sag_3ph_coverage": 0.2979143560472854,
+      "sag_slg_coverage": 0.7400524783436973,
+      "sag_3ph_median": 0.8221401187575067,
+      "sag_slg_median": 0.849447061298202
+    }
+  },
+  "assumptions": {
+    "z0_over_z1": [
+      1.0,
+      2.0,
+      3.0
+    ],
+    "fault_z_3ph_ohm": [
+      0.0,
+      0.5,
+      1.0,
+      2.5,
+      5.0
+    ],
+    "fault_z_slg_ohm": [
+      1.0,
+      5.0,
+      10.0,
+      20.0,
+      40.0
+    ],
+    "sag_trigger_pu": 0.95,
+    "xdss_pu_sweep": [
+      0.15,
+      0.2,
+      0.3
+    ],
+    "machine_pf_assumed": 0.85,
+    "machine_representation": "Synchronous machines represented by subtransient reactance shunted to ground at the machine bus before inverting Ybus. Round 1 inverted the power-flow Ybus, which has no path to ground at generator buses; that matrix is near-singular and understates network strength (case14 |Z_ii| ~2.3 pu at every bus, 45 MVA fault level on a 100 MVA base). Machine ratings are inferred as max_p_mw / PF because MATPOWER cases carry no sn_mva.",
+    "sfr": {
+      "H_s": [
+        2,
+        8
+      ],
+      "D_pu": [
+        0.5,
+        2.0
+      ],
+      "dP_pu": [
+        0.02,
+        0.1
+      ],
+      "droop_R": 0.05,
+      "Tg_s": 8.0
+    }
+  }
+}

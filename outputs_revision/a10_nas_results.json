@@ -1,0 +1,118 @@
+{
+  "genotype": [
+    [
+      [
+        "sep_conv_5",
+        1
+      ],
+      [
+        "avg_pool_3",
+        0
+      ]
+    ],
+    [
+      [
+        "dil_conv_5",
+        2
+      ],
+      [
+        "dil_conv_5",
+        1
+      ]
+    ],
+    [
+      [
+        "dil_conv_5",
+        3
+      ],
+      [
+        "dil_conv_5",
+        2
+      ]
+    ],
+    [
+      [
+        "sep_conv_5",
+        2
+      ],
+      [
+        "dil_conv_5",
+        4
+      ]
+    ]
+  ],
+  "search": {
+    "method": "first-order DARTS, continuous relaxation",
+    "primitives": [
+      "none",
+      "skip_connect",
+      "sep_conv_3",
+      "sep_conv_5",
+      "dil_conv_3",
+      "dil_conv_5",
+      "max_pool_3",
+      "avg_pool_3"
+    ],
+    "nodes": 4,
+    "epochs": 15,
+    "channels": 16,
+    "search_wall_s": 244.55683159828186,
+    "data": "training partition of seed 42 only, split 50/50 for w and alpha; the test partition is never used during search"
+  },
+  "model": {
+    "n_params": 66534,
+    "n_cells": 2,
+    "channels": 48
+  },
+  "accuracy_mean": 0.9891200000000001,
+  "accuracy_std": 0.001814999234771814,
+  "f1_macro_mean": 0.9892134132350068,
+  "f1_macro_std": 0.0018351656783964752,
+  "train_s_mean": 56.20043497085571,
+  "pruned": {
+    "0.10": {
+      "accuracy_mean": 0.9857600000000002,
+      "accuracy_std": 0.00440040402185475,
+      "retention": 0.9966030410870269
+    },
+    "0.25": {
+      "accuracy_mean": 0.9469066666666667,
+      "accuracy_std": 0.04883326734921596,
+      "retention": 0.9573223336568532
+    },
+    "0.50": {
+      "accuracy_mean": 0.42314666666666667,
+      "accuracy_std": 0.21120706217148874,
+      "retention": 0.42780114310363415
+    }
+  },
+  "pruning_note": "global magnitude pruning of Conv1d weights, NO fine-tuning after pruning",
+  "per_seed": {
+    "42": {
+      "accuracy": 0.9861333333333333
+    },
+    "123": {
+      "accuracy": 0.9888
+    },
+    "7": {
+      "accuracy": 0.9908
+    },
+    "2024": {
+      "accuracy": 0.99
+    },
+    "99": {
+      "accuracy": 0.9898666666666667
+    }
+  },
+  "auc_mean": 0.9998458765432099,
+  "auc_std": 5.061310440998748e-05,
+  "auc_note": "computed by reloading the per-seed checkpoints; accuracy verified identical to the training-time value",
+  "cnn_beats_nas_seeds": 0,
+  "inference_cost": {
+    "params": 66534,
+    "flops_m": 22.8,
+    "cpu_ms": 3.463800298050046,
+    "torchscript_cpu_ms": 1.8874502275139093,
+    "gpu_ms": 2.4412500206381083
+  }
+}

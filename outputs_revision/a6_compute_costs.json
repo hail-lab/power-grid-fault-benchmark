@@ -1,0 +1,64 @@
+{
+  "_provenance": {
+    "host": "DESKTOP-WTF",
+    "os": "Windows 11",
+    "python": "3.14.3",
+    "torch": "2.11.0+cu126",
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "warmup": 20,
+    "repeats": 200,
+    "statistic": "median",
+    "flops_convention": "2 x MAC, Conv1d + Linear + LSTM, batch 1"
+  },
+  "models": {
+    "1D-CNN (proposed)": {
+      "params": 70950,
+      "flops_m": 12.2,
+      "cpu_ms": 0.34639984369277954,
+      "torchscript_cpu_ms": 0.20035007037222385,
+      "gpu_ms": 0.5417498759925365
+    },
+    "Shallow CNN": {
+      "params": 11622,
+      "flops_m": 6.0,
+      "cpu_ms": 0.14335010200738907,
+      "torchscript_cpu_ms": 0.11859973892569542,
+      "gpu_ms": 0.2889498136937618
+    },
+    "BiLSTM + Attn": {
+      "params": 136071,
+      "flops_m": 69.6,
+      "cpu_ms": 3.6611498799175024,
+      "torchscript_cpu_ms": 3.5426001995801926,
+      "gpu_ms": 1.3783499598503113
+    },
+    "TCN": {
+      "params": 66934,
+      "flops_m": 65.5,
+      "cpu_ms": 1.2325998395681381,
+      "torchscript_cpu_ms": 1.0469502303749323,
+      "gpu_ms": 1.031649997457862
+    },
+    "SqueezeNet-1D": {
+      "params": 57798,
+      "flops_m": 6.6,
+      "cpu_ms": 1.4704999048262835,
+      "torchscript_cpu_ms": 0.5278000608086586,
+      "gpu_ms": 1.7728500533849
+    },
+    "MobileNetV2-1D": {
+      "params": 127334,
+      "flops_m": 13.0,
+      "cpu_ms": 2.5573500897735357,
+      "torchscript_cpu_ms": 1.5723500400781631,
+      "gpu_ms": 2.007050206884742
+    },
+    "NAS-1D (searched)": {
+      "params": 66534,
+      "flops_m": 22.8,
+      "cpu_ms": 3.463800298050046,
+      "torchscript_cpu_ms": 1.8874502275139093,
+      "gpu_ms": 2.4412500206381083
+    }
+  }
+}

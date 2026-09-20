@@ -1,0 +1,62 @@
+{
+  "Gradient Boosting": {
+    "repro_acc": 0.7705333333333333,
+    "pub_acc": 0.7705333333333333,
+    "delta": 0.0,
+    "flag": "OK"
+  },
+  "Random Forest": {
+    "repro_acc": 0.7424,
+    "pub_acc": 0.7432,
+    "delta": -0.0008000000000000229,
+    "flag": "OK"
+  },
+  "Logistic Regression": {
+    "repro_acc": 0.734,
+    "pub_acc": 0.734,
+    "delta": 0.0,
+    "flag": "OK"
+  },
+  "Decision Tree": {
+    "repro_acc": 0.706,
+    "pub_acc": 0.706,
+    "delta": 0.0,
+    "flag": "OK"
+  },
+  "kNN (k=5)": {
+    "repro_acc": 0.664,
+    "pub_acc": 0.664,
+    "delta": 0.0,
+    "flag": "OK"
+  },
+  "MLP (128-64)": {
+    "repro_acc": 0.7670666666666667,
+    "pub_acc": 0.7670666666666667,
+    "delta": 0.0,
+    "flag": "OK"
+  },
+  "SVM (RBF)": {
+    "repro_acc": 0.7596,
+    "pub_acc": 0.7596,
+    "delta": 0.0,
+    "flag": "OK"
+  },
+  "XGBoost": {
+    "repro_acc": 0.7725333333333333,
+    "pub_acc": 0.7712,
+    "delta": 0.0013333333333332975,
+    "flag": "OK"
+  },
+  "LightGBM": {
+    "repro_acc": 0.7669333333333334,
+    "pub_acc": 0.7669333333333334,
+    "delta": 0.0,
+    "flag": "OK"
+  },
+  "1D-CNN (proposed)": {
+    "repro_acc": 0.9656,
+    "pub_acc": 0.966,
+    "delta": -0.00039999999999995595,
+    "flag": "OK"
+  }
+}

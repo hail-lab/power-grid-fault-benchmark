@@ -29,3 +29,6 @@ Thumbs.db
 
 # Kaggle credentials
 kaggle.json
+
+# Smoke-test artifacts (tiny dataset, numbers are meaningless)
+outputs_smoke/

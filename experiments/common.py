@@ -1,7 +1,9 @@
 """Shared infrastructure for the Heliyon revision experiments.
 
 Imports the authoritative pipeline (rebuild_experiments.py) and adds:
-  - the expanded model zoo (XGBoost, LightGBM, SVM, kNN, MLP, TCN)
+  - the expanded model zoo (XGBoost, LightGBM, SVM, kNN, MLP, TCN, and the
+    SqueezeNet-1D / MobileNetV2-1D lightweight DNN baselines added for
+    Reviewer 2 in round 2)
   - instrumented train/eval wrappers (wall time, peak CUDA memory)
   - the shared seed-split logic (identical to rebuild_experiments.run_bootstrap)
 
@@ -122,11 +124,18 @@ def sklearn_zoo(seed):
     return zoo
 
 
+from experiments.lightweight import MobileNetV21D, SqueezeNet1D   # noqa: E402
+
 DEEP_ZOO = [
     ("1D-CNN (proposed)", rx.FaultCNN1D),
     ("Shallow CNN", rx.ShallowCNN),
     ("BiLSTM + Attn", rx.BiLSTMAttn),
     ("TCN", TCN),
+    # Lightweight DNN baselines added for Reviewer 2 (round 2). See
+    # experiments/lightweight.py for why the 2D originals are ported rather
+    # than used directly.
+    ("SqueezeNet-1D", SqueezeNet1D),
+    ("MobileNetV2-1D", MobileNetV21D),
 ]
 
 
